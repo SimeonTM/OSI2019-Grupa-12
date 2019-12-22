@@ -29,13 +29,14 @@
                    }while(strlen(temp)>50);
                    strcpy(pom->opis,temp);
 
-
+                     //na pocetku nema komentara
                    do
                    {
                        printf("Unesite komentar za dati dogadjaj:");
                        scanf("%s",temp);
                    }while(strlen(temp) > 50);
-                   strcpy(pom->komentar,temp);
+                   pom->koment.broj=1;      //na pocetku se nalazi samo jedan komentar
+                   strcpy(pom->koment.komentar[0],temp);
 
                    do
                    {
@@ -157,12 +158,18 @@
                    printf("%-3d  %-20s  %-20s  %-15s  %02d/%02d/%04d  %02d:%02d  %-50s\n",rb,pom->naziv,pom->lokacija,pom->vrsta_dogadjaja,
                           pom->datum.dan,pom->datum.mjesec,pom->datum.godina,pom->datum.sat,pom->datum.minut,
                           pom->opis);
-                   printf(" KOMENTARI:%s\n\n",pom->komentar);
+
+                   printf(" \nKOMENTARI:\n");
+                   for(rb=0;rb < pom->koment.broj;rb++)
+                   printf("   %s\n",pom->koment.komentar[rb]);
+                   printf("\n");
                }
 
 
                int Read_File(LISTA *lista)
                {
+                   lista->head=lista->tail=NULL;
+
                    FILE *fp=fopen("DOGADJAJ.txt","rb");
                    if(fp == NULL)  return 0;     //datoteka neuspesno otvorena
                    else

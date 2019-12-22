@@ -45,7 +45,7 @@
 
                   int Sort_By_Comments(const NODE *src1,const NODE *src2)
                   {
-                      return (strlen(src1->info.komentar) < strlen(src2->info.komentar))?1:0;
+                      return (src1->info.koment.broj < src2->info.koment.broj)?1:0;
                   }
 
 

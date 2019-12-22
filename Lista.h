@@ -14,12 +14,19 @@
                         int sat,minut;
                     }DATUM;
 
+                    typedef struct
+                    {
+                        char komentar[3][51];
+                        int broj;
+                    }KOMENTAR;   //ova struktura predstavlja matricu u kojoj su komentari,a broj se odnosi na
+                                 //popunjenost
 
                     typedef struct
                     {
                         DATUM datum;
                         char naziv[21],lokacija[21];
-                        char opis[51],komentar[51];
+                        char opis[51];
+                        KOMENTAR koment;
                         char vrsta_dogadjaja[16];
 
                     }DOGADJAJ;
