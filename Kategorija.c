@@ -3,7 +3,7 @@
 
 
                        CATEGORY Read_Catg_File()  //ucitavanje kategorija iz fajla
-                      {
+                       {
                             CATEGORY rez;
                             rez.niz=NULL;
 
@@ -16,7 +16,6 @@
 
                                 fscanf(fp,"%d\n",&q);       //ucitava se broj kategorija
                                 rez.length=q;
-
                                 rez.niz = (char **)calloc(rez.length,sizeof(char*));
 
                                 for(i=0;i<rez.length;i++)
@@ -33,13 +32,13 @@
 
 
 
-                      void Write_Catg(CATEGORY src)
+                      void Print_Catg(CATEGORY src)
                       {
                           if(src.niz == NULL)  return;
                           int i;
                           printf("Kategorije dogadjaja:\n");     //formatirani upis kategorija
                           for(i=0;i < src.length;i++)
-                            printf(" %d) %s\n",i+1,src.niz[i]);
+                            printf(" %d %s\n",i+1,src.niz[i]);
                       }
 
 
@@ -84,15 +83,15 @@
 
                           void Add_Catg(CATEGORY *src,const char *value)
                           {
-                              if(src->length > 0)  //ako matrica nije prazna
+                              if(src->length > 0)                                                         //ako matrica nije prazna
                               {
                                    src->length+=1;
-                                   src->niz=(char**)realloc(src->niz,sizeof(char*)*src->length);
-                                   src->niz[src->length-1] = (char *)malloc(16*sizeof(char));
+                                   src->niz=(char**)realloc(src->niz , sizeof(char*) * (src->length) );   //realocira se niz pokazivaca na stringove
+                                   src->niz[src->length-1] = (char *)malloc(16*sizeof(char));              //i povecava se za 1
                                    strcpy(src->niz[src->length-1],value);
                               }
 
-                              else    //ako je matrica  prazna
+                              else                                                                          //ako je matrica  prazna
                               {
                                   src->length+=1;
                                   src->niz=(char**)malloc(sizeof(char*));
@@ -104,19 +103,19 @@
 
                           void Delete_Catg(CATEGORY *src,const char *key)
                           {
-                              char *pom=Search_Catg(*src,key);//trazi se lokacija u matrici
-                              if(pom == NULL)  return;
+                              char *pom=Search_Catg(*src,key);         //trazi se lokacija u matrici
+                              if(pom == NULL)  return;                 //na mesto sringa koji se brise kopira se zadnji string iz matrice
                               if(pom != src->niz[src->length-1])
                               strcpy(pom,src->niz[src->length-1]);
 
-                              char **temp=(char**)malloc( sizeof(char*)*(src->length-1) );
+                              char **temp=(char**)calloc(src->length-1,sizeof(char*));
                               int i;
                               for(i=0;i < src->length-1;i++)
-                                temp[i]=src->niz[i];
+                              temp[i]=src->niz[i];
 
-                              free(src->niz[src->length-1]);//brise se zadnji clan matrice
+                              free(src->niz[src->length-1]);         //oslobadja se string koji se zeli obrisati
                               free(src->niz);
-                              src->length-=1;
+                              src->length-=1;                          //broj kategorija se smanjuje za 1
                               src->niz=temp;
 
                           }

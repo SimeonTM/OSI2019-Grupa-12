@@ -12,15 +12,15 @@
                           char **niz;       //struktura predstavlja dvodimenizionalnu matricu
                       }CATEGORY;            // u kojoj su pohranjeni nazivi kategorija dogadjaja
 
-                      CATEGORY Read_Catg_File();
-                      void Write_Catg_File(CATEGORY);
+                      CATEGORY Read_Catg_File();              //citanje kategorija iz fajla
+                      void Write_Catg_File(CATEGORY);         //upis kategorija u fajl
 
-                      void Write_Catg(CATEGORY);
-                      char* Search_Catg(CATEGORY,const char*);
-                      void Delete_Catg_Arr(CATEGORY*);
+                      void Print_Catg(CATEGORY);                     //ispis kategorija na konzolu
+                      char* Search_Catg(CATEGORY,const char*);       //pretraga kategorije prema nazivu
+                      void Delete_Catg_Arr(CATEGORY*);               //brisanje kategorije
 
-                      void Add_Catg(CATEGORY*,const char*);
-                      void Delete_Catg(CATEGORY*,const char*);
+                      void Add_Catg(CATEGORY*,const char*);         //dodavanje kategorije
+                      void Delete_Catg(CATEGORY*,const char*);      //brisanje kategorije
 
 
 
