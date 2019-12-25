@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include "Kategorija.h"
 
-          // u datoteci DOGADJAJ su upisani dogadjaji u binarnom formatu
 
                     typedef struct
                     {
@@ -46,19 +45,19 @@
                     }LISTA;
 
 
-                    void Read_Dj(DOGADJAJ*,CATEGORY);
-                    void Write_Dj(DOGADJAJ*,int);
+                    void Read_Dj(DOGADJAJ*,CATEGORY);  //cita dogadjaj sa konzole
+                    void Write_Dj(DOGADJAJ*,int);      //pise dogadjaj na konzolu
 
-                    void Header();
-                    void Footer();
+                    void Header();                     //pise atribute dogadjaja na konzolu
+                    void Footer();                     //pise zaglavlje
 
-                    void Add_Dj(LISTA*,DOGADJAJ*);
-                    int Delete_Dj(LISTA*,const char*);
-                    NODE* Search_Dj(LISTA*,const char*);
-                    void Delete_List(LISTA*);
+                    void Add_Dj(LISTA*,DOGADJAJ*);      //dodaje dogadjaj u listu
+                    int Delete_Dj(LISTA*,const char*);  //brsie dogadjaj iz liste prema nazivu dogadjaja
+                    NODE* Search_Dj(LISTA*,const char*);//trazi dogadaj u listi prema nazivu
+                    void Delete_List(LISTA*);           //brise listi
 
-                    int Read_File(LISTA*);
-                    int Write_File(LISTA*);
+                    int Read_File(LISTA*);               //cita dogadjaj iz fajla i upisuje u listu
+                    int Write_File(LISTA*);              //pise dogadjaje iz liste u fajl
 
 
 #endif // LISTA_H_INCLUDED

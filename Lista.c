@@ -40,7 +40,7 @@
 
                    do
                    {
-                       Write_Catg(src);                                    //korisnik bira neku od ponudjenih kategorija
+                       Print_Catg(src);                                    //korisnik bira neku od ponudjenih kategorija
                        printf("Unesite redni broj zeljene kategorije:");
                        scanf("%d",&z);
                    }while(z<1 || z>src.length);
@@ -98,8 +98,8 @@
                NODE* Search_Dj(LISTA *lista,const char *key)
                {
                    NODE *q=lista->head;
-
-                   for(;q != NULL;q=q->right);
+                                                     //pretraga dogadjaja
+                   for(;q != NULL;q=q->right)
                    if(!strcmp(key,q->info.naziv))
                    return q;
 
@@ -143,7 +143,7 @@
 
                void Header()
                {
-                   printf("%-3s  %-20s  %-20s  %-15s  %-10s  %-5s  %-50s\n","RB","NAZIV","LOKACIJA","KATEGORIJA","DATUM","VREME","OPIS");
+                   printf(" %-3s  %-20s  %-20s  %-15s  %-10s  %-5s  %-50s\n","RB","NAZIV","LOKACIJA","KATEGORIJA","DATUM","VREME","OPIS");
                }
 
                void Footer()
@@ -155,7 +155,7 @@
 
                void Write_Dj(DOGADJAJ *pom,int rb)  //ispis jednog dogadjaja
                {
-                   printf("%-3d  %-20s  %-20s  %-15s  %02d/%02d/%04d  %02d:%02d  %-50s\n",rb,pom->naziv,pom->lokacija,pom->vrsta_dogadjaja,
+                   printf(" %-3d  %-20s  %-20s  %-15s  %02d/%02d/%04d  %02d:%02d  %-50s\n",rb,pom->naziv,pom->lokacija,pom->vrsta_dogadjaja,
                           pom->datum.dan,pom->datum.mjesec,pom->datum.godina,pom->datum.sat,pom->datum.minut,
                           pom->opis);
 
@@ -166,7 +166,7 @@
                }
 
 
-               int Read_File(LISTA *lista)
+               int Read_File(LISTA *lista)             //Citanje dogadjaja iz fajla
                {
                    lista->head=lista->tail=NULL;
 
@@ -184,7 +184,7 @@
 
 
 
-               int Write_File(LISTA *lista)
+               int Write_File(LISTA *lista)  //upis dogadjaja u fajl
                {
                    FILE *fp=fopen("DOGADJAJ.txt","wb");
                    if(fp == NULL) return 0;
