@@ -103,20 +103,35 @@
 
                           void Delete_Catg(CATEGORY *src,const char *key)
                           {
-                              char *pom=Search_Catg(*src,key);         //trazi se lokacija u matrici
-                              if(pom == NULL)  return;                 //na mesto sringa koji se brise kopira se zadnji string iz matrice
-                              if(pom != src->niz[src->length-1])
-                              strcpy(pom,src->niz[src->length-1]);
+                              char *pom=Search_Catg(*src,key);
+                              if(pom == NULL)  return;                    //provera da li string postoji
 
-                              char **temp=(char**)calloc(src->length-1,sizeof(char*));
                               int i;
-                              for(i=0;i < src->length-1;i++)
-                              temp[i]=src->niz[i];
+                              char **check;
 
-                              free(src->niz[src->length-1]);         //oslobadja se string koji se zeli obrisati
-                              free(src->niz);
+
+                              for(i=0;i<src->length;i++)                 //u check se upisuje adresa pointera na string
+                              {
+                                  if(strcmp(src->niz[i],pom) == 0)
+                                  {
+                                      check=&(src->niz[i]);
+                                      i=src->length;
+                                  }
+                              }
+
+
+                              if( check != &src->niz[src->length-1])   //vrsi se zamjena stringa koji se brise i poslednjeg stringa u matrici
+                              {
+
+                                  char *temp = *check;
+                                  *check = src->niz[src->length-1];
+                                  src->niz[src->length-1] = temp;
+                              }
+
+
+                              free(src->niz[src->length-1]);           //oslobadja se string koji se zeli obrisati
+                              src->niz[src->length-1]=NULL;
                               src->length-=1;                          //broj kategorija se smanjuje za 1
-                              src->niz=temp;
 
                           }
 

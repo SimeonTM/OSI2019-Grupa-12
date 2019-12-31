@@ -17,10 +17,10 @@
 
                       void Print_Catg(CATEGORY);                     //ispis kategorija na konzolu
                       char* Search_Catg(CATEGORY,const char*);       //pretraga kategorije prema nazivu
-                      void Delete_Catg_Arr(CATEGORY*);               //brisanje kategorije
+                      void Delete_Catg_Arr(CATEGORY*);               //brisanje kategorije iz memorije
 
                       void Add_Catg(CATEGORY*,const char*);         //dodavanje kategorije
-                      void Delete_Catg(CATEGORY*,const char*);      //brisanje kategorije
+                      void Delete_Catg(CATEGORY*,const char*);      //brisanje odabrane kategorije
 
 
 
