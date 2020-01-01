@@ -28,7 +28,6 @@
 
                   fscanf(fp,"%d\n",&kviz->correct[i]);
               }
-              fclose(fp);
           }
 
 
@@ -119,6 +118,5 @@
                   fprintf(fp,"%s\n",kviz->third_answer[i]);
                   fprintf(fp,"%d\n",kviz->correct[i]);
               }
-              fclose(fp);
              }
 
