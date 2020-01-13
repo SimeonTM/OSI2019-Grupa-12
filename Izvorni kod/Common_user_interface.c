@@ -15,6 +15,7 @@ int main()
     {
         Print_Front_Page("Naslovna.txt");
         Print_Menu();
+        printf(" Unesi broj opcije : ");
 
         scanf("\n%c",&regime);
         switch(regime)

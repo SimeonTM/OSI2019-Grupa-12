@@ -203,3 +203,71 @@
 1577650697 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\sortiranje.c
 	"Sortiranje.h"
 
+1578910624 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\korisnik_bez_naloga.c
+	"Korisnik_bez_naloga.h"
+
+1578909396 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\korisnik_bez_naloga.h
+	"Kategorija.h"
+	"Lista.h"
+	"Kviz.h"
+	"Grad.h"
+	<time.h>
+
+1578909396 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\kategorija.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1578909396 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\lista.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Kategorija.h"
+
+1578909396 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\kviz.h
+	<stdio.h>
+	<string.h>
+
+1578909396 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\grad.h
+	<stdio.h>
+	<string.h>
+	<stdio.h>
+
+1577800523 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\korisnik_sa_nalogom.c
+	"Korisnik_sa_nalogom.h"
+
+1577791162 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\korisnik_sa_nalogom.h
+	"Lista.h"
+	"Kviz.h"
+	"Kategorija.h"
+	"Grad.h"
+	"Sortiranje.h"
+	"Korisnik_bez_naloga.h"
+	<conio.h>
+
+1577133178 c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\sortiranje.h
+	<stdio.h>
+	<string.h>
+	"Lista.h"
+	"Kategorija.h"
+
+1577650697 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\sortiranje.c
+	"Sortiranje.h"
+
+1578909396 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\grad.c
+	"Grad.h"
+
+1578909396 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\kategorija.c
+	"Kategorija.h"
+
+1578909396 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\kviz.c
+	"Kviz.h"
+
+1578909719 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\lista.c
+	"Lista.h"
+	"Korisnik_bez_naloga.h"
+
+1578910624 source:c:\users\zoka\desktop\programiranje\osi projekat\izvorni kod\administrator_interface.c
+	"Korisnik_bez_naloga.h"
+	"Korisnik_sa_nalogom.h"
+
