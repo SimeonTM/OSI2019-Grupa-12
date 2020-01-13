@@ -1,0 +1,205 @@
+# depslib dependency file v1.0
+1577799627 source:c:\users\pc\desktop\info-kutak\administrator_interface.c
+	"Korisnik_bez_naloga.h"
+	"Korisnik_sa_nalogom.h"
+
+1577483531 c:\users\pc\desktop\info-kutak\korisnik_bez_naloga.h
+	"Kategorija.h"
+	"Lista.h"
+	"Kviz.h"
+	"Grad.h"
+	<time.h>
+
+1577480202 c:\users\pc\desktop\info-kutak\kategorija.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1577707197 c:\users\pc\desktop\info-kutak\lista.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Kategorija.h"
+
+1577103750 c:\users\pc\desktop\info-kutak\kviz.h
+	<stdio.h>
+	<string.h>
+
+1577748433 c:\users\pc\desktop\info-kutak\grad.h
+	<stdio.h>
+	<string.h>
+	<stdio.h>
+
+1577791162 c:\users\pc\desktop\info-kutak\korisnik_sa_nalogom.h
+	"Lista.h"
+	"Kviz.h"
+	"Kategorija.h"
+	"Grad.h"
+	"Sortiranje.h"
+	"Korisnik_bez_naloga.h"
+	<conio.h>
+
+1577133178 c:\users\pc\desktop\info-kutak\sortiranje.h
+	<stdio.h>
+	<string.h>
+	"Lista.h"
+	"Kategorija.h"
+
+1577748957 source:c:\users\pc\desktop\info-kutak\grad.c
+	"Grad.h"
+
+1577703811 source:c:\users\pc\desktop\info-kutak\kategorija.c
+	"Kategorija.h"
+
+1577791391 source:c:\users\pc\desktop\info-kutak\korisnik_bez_naloga.c
+	"Korisnik_bez_naloga.h"
+
+1577800523 source:c:\users\pc\desktop\info-kutak\korisnik_sa_nalogom.c
+	"Korisnik_sa_nalogom.h"
+
+1577801460 source:c:\users\pc\desktop\info-kutak\kviz.c
+	"Kviz.h"
+
+1577708181 source:c:\users\pc\desktop\info-kutak\lista.c
+	"Lista.h"
+	"Korisnik_bez_naloga.h"
+
+1577650697 source:c:\users\pc\desktop\info-kutak\sortiranje.c
+	"Sortiranje.h"
+
+1577799627 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\administrator_interface.c
+	"Korisnik_bez_naloga.h"
+	"Korisnik_sa_nalogom.h"
+
+1577483531 c:\users\pc\desktop\preliminarna verzija\info-kutak\korisnik_bez_naloga.h
+	"Kategorija.h"
+	"Lista.h"
+	"Kviz.h"
+	"Grad.h"
+	<time.h>
+
+1577480202 c:\users\pc\desktop\preliminarna verzija\info-kutak\kategorija.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1577707197 c:\users\pc\desktop\preliminarna verzija\info-kutak\lista.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Kategorija.h"
+
+1577103750 c:\users\pc\desktop\preliminarna verzija\info-kutak\kviz.h
+	<stdio.h>
+	<string.h>
+
+1577748433 c:\users\pc\desktop\preliminarna verzija\info-kutak\grad.h
+	<stdio.h>
+	<string.h>
+	<stdio.h>
+
+1577791162 c:\users\pc\desktop\preliminarna verzija\info-kutak\korisnik_sa_nalogom.h
+	"Lista.h"
+	"Kviz.h"
+	"Kategorija.h"
+	"Grad.h"
+	"Sortiranje.h"
+	"Korisnik_bez_naloga.h"
+	<conio.h>
+
+1577133178 c:\users\pc\desktop\preliminarna verzija\info-kutak\sortiranje.h
+	<stdio.h>
+	<string.h>
+	"Lista.h"
+	"Kategorija.h"
+
+1577748957 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\grad.c
+	"Grad.h"
+
+1577703811 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\kategorija.c
+	"Kategorija.h"
+
+1577791391 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\korisnik_bez_naloga.c
+	"Korisnik_bez_naloga.h"
+
+1577800523 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\korisnik_sa_nalogom.c
+	"Korisnik_sa_nalogom.h"
+
+1577801460 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\kviz.c
+	"Kviz.h"
+
+1577708181 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\lista.c
+	"Lista.h"
+	"Korisnik_bez_naloga.h"
+
+1577650697 source:c:\users\pc\desktop\preliminarna verzija\info-kutak\sortiranje.c
+	"Sortiranje.h"
+
+1578102124 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\administrator_interface.c
+	"Korisnik_bez_naloga.h"
+	"Korisnik_sa_nalogom.h"
+
+1577483531 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\korisnik_bez_naloga.h
+	"Kategorija.h"
+	"Lista.h"
+	"Kviz.h"
+	"Grad.h"
+	<time.h>
+
+1577480202 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\kategorija.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1577707197 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\lista.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Kategorija.h"
+
+1577103750 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\kviz.h
+	<stdio.h>
+	<string.h>
+
+1577748433 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\grad.h
+	<stdio.h>
+	<string.h>
+	<stdio.h>
+
+1577791162 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\korisnik_sa_nalogom.h
+	"Lista.h"
+	"Kviz.h"
+	"Kategorija.h"
+	"Grad.h"
+	"Sortiranje.h"
+	"Korisnik_bez_naloga.h"
+	<conio.h>
+
+1577133178 c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\sortiranje.h
+	<stdio.h>
+	<string.h>
+	"Lista.h"
+	"Kategorija.h"
+
+1577748957 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\grad.c
+	"Grad.h"
+
+1578102736 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\kategorija.c
+	"Kategorija.h"
+
+1577791391 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\korisnik_bez_naloga.c
+	"Korisnik_bez_naloga.h"
+
+1577800523 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\korisnik_sa_nalogom.c
+	"Korisnik_sa_nalogom.h"
+
+1577801460 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\kviz.c
+	"Kviz.h"
+
+1577708181 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\lista.c
+	"Lista.h"
+	"Korisnik_bez_naloga.h"
+
+1577650697 source:c:\users\pc\desktop\preliminarna verzija - copy\info-kutak\sortiranje.c
+	"Sortiranje.h"
+

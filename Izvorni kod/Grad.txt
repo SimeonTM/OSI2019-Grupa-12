@@ -1,0 +1,17 @@
+Banja_Luka
+Grad_na_Vrbasu
+500000
+BiH-Republika_Srpska
+Bosanska_Krajina
+4
+Borik
+Stracevica
+Rebrovac
+Obilicevo
+4
+Tvrdjava_Kastel
+Hram_Hrista_Spasitelja
+Gospodska_ulica
+Palata_Republike
+
+
