@@ -89,7 +89,6 @@ void Add_Catg(CATEGORY *src,const char *value)
          src->niz[src->length-1] = (char *)malloc(16*sizeof(char));              //i povecava se za 1
          strcpy(src->niz[src->length-1],value);
     }
-
     else                                                                          //ako je matrica  prazna
     {
         src->length+=1;
@@ -108,7 +107,6 @@ void Delete_Catg(CATEGORY *src,const char *key)
     int i;
     char **check;
 
-
     for(i=0;i<src->length;i++)                 //u check se upisuje adresa pointera na string
     {
         if(strcmp(src->niz[i],pom) == 0)
@@ -118,15 +116,12 @@ void Delete_Catg(CATEGORY *src,const char *key)
         }
     }
 
-
     if( check != &src->niz[src->length-1])   //vrsi se zamjena stringa koji se brise i poslednjeg stringa u matrici
     {
-
         char *temp = *check;
         *check = src->niz[src->length-1];
         src->niz[src->length-1] = temp;
     }
-
 
     free(src->niz[src->length-1]);           //oslobadja se string koji se zeli obrisati
     src->niz[src->length-1]=NULL;

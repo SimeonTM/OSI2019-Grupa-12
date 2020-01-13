@@ -554,12 +554,15 @@
                              void Print_Menu_Advanced()
                              {
                                  Print_Menu();
-                                 printf("|                                DODAVANJE NOVOG DOGADJAJA(10)                        BRISANJE DOGADJAJA(11)                    IZMJENA DOGADJAJA(12)                                           |\n");
-                                 printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                                 printf("|     SORTIRANJE DOGADJAJA(13)                                                        IZMJENA KVIZA(14)                                                          IZMJENA PARAMETARA GRADA(15)   |\n");
-                                 printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                                 printf("|                                      DODAVANJE KATEGORIJE DOGADJAJA(16)                                              BRISANJE KATEGORIJE DOGADJAJA(17)                                        |\n");
-                                 printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+                                 printf(" |    (10) DODAVANJE NOVOG DOGADJAJA           |\n");
+                                 printf(" |    (11) BRISANJE DOGADJAJA                  |\n");
+                                 printf(" |    (12) IZMJENA DOGADJAJA                   |\n");
+                                 printf(" |    (13) SORTIRANJE DOGADJAJA                |\n");
+                                 printf(" |    (14) IZMJENA KVIZA                       |\n");
+                                 printf(" |    (15) IZMJENA PARAMETARA GRADA            |\n");
+                                 printf(" |    (16) DODAVANJE KATEGORIJE DOGADJAJA      |\n");
+                                 printf(" |    (17) BRISANJE KATEGORIJE DOGADJAJA       |\n");
+                                 printf(" -----------------------------------------------\n\n");
                              }
 
 

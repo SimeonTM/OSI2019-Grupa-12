@@ -169,17 +169,16 @@ void Print_City_User()
 
 void Print_Menu()
 {
-    printf("-----------------------------------------------\n");
-    printf("|    (1) PREGLED DANASNJIH DOGADJAJA          |\n");
-    printf("|    (2) PREGLED PROTEKLIH DOGADJAJA          |\n");
-    printf("|    (3) PREGLED BUDUCIH DOGADJAJA            |\n");
-    printf("|    (4) IGRANJE KVIZA                        |\n");
-    printf("|    (5) KOMENTARISANJE                       |\n");
-    printf("|    (6) PREGLED GRADA                        |\n");
-    printf("|    (7) PREGLED DOGADJAJA PREMA KATEGORIJI   |\n");
-    printf("|    (8) PREGLED SVIH DOGADJAJA               |\n");
-    printf("|    (9) NESTO O AUTORIMA                     |\n");
-    printf("|    (#) KRAJ                                 |\n");
-    printf("-----------------------------------------------\n");
-    printf(" Unesi broj opcije : ");
+    printf(" -----------------------------------------------\n");
+    printf(" |    (#) KRAJ                                 |\n");
+    printf(" |    (1) PREGLED DANASNJIH DOGADJAJA          |\n");
+    printf(" |    (2) PREGLED PROTEKLIH DOGADJAJA          |\n");
+    printf(" |    (3) PREGLED BUDUCIH DOGADJAJA            |\n");
+    printf(" |    (4) IGRANJE KVIZA                        |\n");
+    printf(" |    (5) KOMENTARISANJE                       |\n");
+    printf(" |    (6) PREGLED GRADA                        |\n");
+    printf(" |    (7) PREGLED DOGADJAJA PREMA KATEGORIJI   |\n");
+    printf(" |    (8) PREGLED SVIH DOGADJAJA               |\n");
+    printf(" |    (9) NESTO O AUTORIMA                     |\n");
+    printf(" -----------------------------------------------\n");
 }
